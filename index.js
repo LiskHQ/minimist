@@ -183,7 +183,7 @@ module.exports = function (args, opts) {
         else {
             if (!flags.unknownFn || flags.unknownFn(arg) !== false) {
                 argv._.push(
-                    flags.strings['_'] || !isNumber(arg) ? arg : Number(arg)
+                    flags.strings['_'] || !isNumber(arg) ? arg : arg.toString()
                 );
             }
             if (opts.stopEarly) {
