@@ -200,7 +200,7 @@ test('base64 value', function (t) {
   var signature = 'KjyhJ+/Peyv2KsjDsfWs9pl8q2K6n941Z9GI7cusvF3IF3+4jQOoaRzgM0j1abEhvKnno8Q79cBWOC81/4Q8CQ==';
     t.deepEqual(
         parse([ '--signature', signature ]),
-        { _: [], signature : signature }
+        { _: [], signature: signature }
     );
     t.end();
 });
